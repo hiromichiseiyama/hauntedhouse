@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class Show_msg : MonoBehaviour
 {
     private Text text;
-    [SerializeField]private float time = 20;
+    [SerializeField]private float time = 25;
 
     // Start is called before the first frame update
     void Start()
     {
         text = GetComponent<Text>();
-        Invoke("show", 15f);
+        Invoke("show", time);
     }
 
     // Update is called once per frame
