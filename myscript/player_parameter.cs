@@ -1,11 +1,12 @@
 ﻿using Oculus.Platform.Samples.VrHoops;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class player_parameter : MonoBehaviour
 {
-    [SerializeField]private GameObject player;
+    [SerializeField]protected GameObject player;
 
     private void Update()
     {
@@ -25,5 +26,15 @@ public class player_parameter : MonoBehaviour
     public Rigidbody get_rigidbody()
     {
         return player.GetComponent<Rigidbody>();
+    }
+}
+
+public class enemy_parameter:MonoBehaviour
+{
+    [SerializeField] private GameObject enemy;
+
+    private void Update()
+    {
+        enemy = GetComponent<GameObject>();
     }
 }

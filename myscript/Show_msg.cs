@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 public class Show_msg : MonoBehaviour
 {
     private Text text;
-    [SerializeField]private float time = 25;
+    [SerializeField]private float time = 35;
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,6 @@ public class Show_msg : MonoBehaviour
 
     void show()
     {
-        SceneManager.LoadScene("1f");
+        SceneManager.LoadScene("game");
     }
 }

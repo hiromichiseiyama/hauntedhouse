@@ -21,6 +21,6 @@ public class start_game : MonoBehaviour
 
     public void ReadNextScene()
     {
-        SceneManager.LoadScene("1f");
+        SceneManager.LoadScene("black");
     }
 }

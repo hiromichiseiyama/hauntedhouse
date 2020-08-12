@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class move_enemy : player_parameter
 {
-    private bool go_flag=false;
-    private Animator parent_anim;
+    public bool go_flag=false;
+    public Animator parent_anim;
 
     private void Start()
     {
